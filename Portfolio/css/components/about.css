@@ -1,0 +1,49 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+.about .about__left {
+    max-width: 40rem;
+    flex: 1;
+}
+
+.about .about__left p{
+    margin: 1rem 0 2rem;
+}
+
+.about .about__left ul{ /* sem isso o primeiro icone iria para frente, por conta do padding  */
+    margin-left: -1.2rem;
+}
+
+.about .about__left ul li{
+    display: inline-block; /* para as coisas ficarem lado a lado */
+}
+
+.about .about__left ul a{
+    display: inline-block; /* para as coisas ficarem lado a lado */
+    padding: 1rem; /* necessário para aumentar a área de clique de um icone */
+}
+
+.about .about__right{
+    flex: 1;
+    max-width: 66rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about__left {
+        max-width: 66rem;
+        text-align: center;
+    }
+
+    .about .about__right {
+        text-align: center;
+    }
+}
